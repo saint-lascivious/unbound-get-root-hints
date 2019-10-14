@@ -1,0 +1,6 @@
+[Unit]
+Description=Download root.hints for Unbound DNS validating resolver
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/curl -o /var/lib/unbound/root.hints https://www.internic.net/domain/named.root

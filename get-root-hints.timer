@@ -1,0 +1,9 @@
+[Unit]
+Description=Freshen root.hints for Unbound DNS validating resolver on a montly timer
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+ 
+[Install]
+WantedBy=timers.target
