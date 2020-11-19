@@ -1,9 +1,9 @@
 [Unit]
-Description=Freshen root.hints for Unbound DNS validating resolver on a montly timer
+Description=Freshen root.hints for Unbound DNS validating resolver at boot and on a weekly timer
 
 [Timer]
-OnCalendar=monthly
-Persistent=true
+OnBootSec=5min
+OnUnitActiveSec=1w
  
 [Install]
 WantedBy=timers.target
