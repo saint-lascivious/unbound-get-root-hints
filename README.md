@@ -6,7 +6,7 @@ simple systemd timer to periodically update root.hints for unbound recursive res
 
 * Download the service files:
 ```
-cd cd /etc/systemd/system/
+cd /etc/systemd/system/
 sudo wget https://raw.githubusercontent.com/saint-lascivious/unbound-get-root-hints/master/get-root-hints.service
 sudo wget https://raw.githubusercontent.com/saint-lascivious/unbound-get-root-hints/master/get-root-hints.timer
 ```

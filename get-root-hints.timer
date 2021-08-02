@@ -2,8 +2,8 @@
 Description=Freshen root.hints for Unbound DNS validating resolver at boot and on a weekly timer
 
 [Timer]
-OnBootSec=5min
-OnUnitActiveSec=1w
- 
+OnBootSec=10min
+OnCalendar=monthly
+
 [Install]
 WantedBy=timers.target
